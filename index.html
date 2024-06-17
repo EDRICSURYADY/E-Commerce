@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
     <title>Store - Your Best Marketplace</title>
     <link
       rel="stylesheet"
@@ -14,14 +13,11 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="style/main.css" rel="stylesheet" />
+    <link href="/style/main.scss" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/components/_categories.scss">
   </head>
-
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
-      data-aos="fade-down"
-    >
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top" data-aos="fade-down">
       <div class="container">
         <a href="/store-html-starter/index.html" class="navbar-brand">
           <img src="/images/dashboard-store-logo.svg" alt="Brand Logo" />
@@ -32,7 +28,7 @@
           data-toggle="collapse"
           data-target="#navbarResponsive"
         >
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
@@ -61,7 +57,7 @@
       <section class="store-carousel">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" data-aos="zoom-in">
               <div id="storeCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#storeCarousel" data-slide-to="0" class="active"></li>
@@ -94,7 +90,7 @@
           </div>
         </div>
       </section>
-      <section class="store-trend-categories">
+      <section class="store-trend-categories mt-4">
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
@@ -163,8 +159,34 @@
         </div>
       </section>
     </div>
-    <!-- End Page Content -->
-    </Section>
+  </section>
+  <!-- End Page Content -->
+   <!-- Page Product -->
+    <section class="store-new-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up">
+            <h5>New Product</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <a href="/details.html" class="component-products d-block"></a>
+            <div class="product-thumbnail">
+              <div class="products-image" style="background-image: url('/images/products-apple-watch.jpg');">
+              </div>
+            </div>
+            <div class="product-text">
+              Apple Watch 4
+            </div>
+            <div class="product price">
+              $89
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Page Product -->
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -172,9 +194,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script>AOS.init();</script>
     <script src="./js/navbar-scroll.js"></script>
   </body>
 </html>
