@@ -1,11 +1,11 @@
 .navbar-store{
     padding-top:15px;
-    @include meida-breakpoint-down(md){
-        background-color: white !important;
-    }
+    // @include meida-breakpoint-down(md){
+    //     background-color: white !important;
+    // }
     .nav-item{
         .nav-link{
-            @include meida-breakpoint-up(lg){
+            @include media-breakpoint-up(lg){
                 margin-left: 10px;
                 margin-right: 10px;
             }

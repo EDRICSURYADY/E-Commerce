@@ -5,6 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -87,12 +88,10 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -1835,10 +1834,6 @@ pre code {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-.form-control::-moz-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -1852,9 +1847,7 @@ input[type=date].form-control,
 input[type=time].form-control,
 input[type=datetime-local].form-control,
 input[type=month].form-control {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 select.form-control:focus::-ms-value {
@@ -2231,9 +2224,7 @@ textarea.form-control {
   color: #212529;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
@@ -3430,9 +3421,7 @@ input[type=button].btn-block {
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-select:focus {
   border-color: #80bdff;
@@ -3543,9 +3532,7 @@ input[type=button].btn-block {
   height: 1.4rem;
   padding: 0;
   background-color: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-range:focus {
   outline: none;
@@ -3569,14 +3556,11 @@ input[type=button].btn-block {
   background-color: #007bff;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
-    -webkit-transition: none;
     transition: none;
   }
 }
@@ -3598,14 +3582,11 @@ input[type=button].btn-block {
   background-color: #007bff;
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
-    -moz-transition: none;
     transition: none;
   }
 }
@@ -3630,13 +3611,11 @@ input[type=button].btn-block {
   background-color: #007bff;
   border: 0;
   border-radius: 1rem;
-  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
-    -ms-transition: none;
     transition: none;
   }
 }
@@ -4317,10 +4296,8 @@ input[type=button].btn-block {
 }
 @media (min-width: 576px) {
   .card-columns {
-    -moz-column-count: 3;
-         column-count: 3;
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
+    column-count: 3;
+    column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
   }
@@ -5133,8 +5110,7 @@ a.close.disabled {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   opacity: 0;
   border-radius: 0.25rem;
 }
@@ -5232,7 +5208,6 @@ a.close.disabled {
 .modal-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
-  height: -moz-min-content;
   height: min-content;
   content: "";
 }
@@ -5340,7 +5315,6 @@ a.close.disabled {
   }
   .modal-dialog-centered::before {
     height: calc(100vh - 3.5rem);
-    height: -moz-min-content;
     height: min-content;
   }
   .modal-sm {
@@ -6897,21 +6871,15 @@ button.bg-dark:focus {
   }
 }
 .user-select-all {
-  -webkit-user-select: all !important;
-     -moz-user-select: all !important;
-          user-select: all !important;
+  user-select: all !important;
 }
 
 .user-select-auto {
-  -webkit-user-select: auto !important;
-     -moz-user-select: auto !important;
-          user-select: auto !important;
+  user-select: auto !important;
 }
 
 .user-select-none {
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-          user-select: none !important;
+  user-select: none !important;
 }
 
 .overflow-auto {
@@ -9190,4 +9158,122 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-}/*# sourceMappingURL=bootstrap.css.map */
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.page-content {
+  margin-top: 100px;
+}
+
+.footer {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 150px;
+}
+.footer p {
+  color: #979797;
+}
+
+.form-control {
+  background-color: white;
+}
+
+.navbar-store {
+  padding-top: 15px;
+}
+@media (min-width: 992px) {
+  .navbar-store .nav-item .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.navbar-store .profile-picture {
+  max-height: 45px !important;
+}
+.navbar-store .card-badge {
+  display: inline-block;
+  min-width: 2em;
+  padding: 0.3em;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  background: #29a867;
+  color: #fefefe;
+  margin-left: -10px;
+}
+
+.navbar-fixed-top .scrollbar {
+  background-color: #29a867 !important;
+  transition: background-color 200ms linear;
+}
+
+.page-home h5 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.page-home .store-trend-categories {
+  margin-top: 38px;
+}
+.page-home .store-new-product {
+  margin-top: 10px;
+}
+
+.component-categories {
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.component-categories:hover {
+  transform: scale(2.05s);
+  text-decoration: none;
+}
+.component-categories .categories-text {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #0c0d36;
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+.component-products {
+  margin-bottom: 20px;
+}
+.component-products:hover {
+  text-decoration: none;
+}
+.component-products .product-thumbnail {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.component-products .product-thumbnail:hover .products-image, .component-products .product-thumbnail:focus .products-image {
+  transform: scale(1.1);
+}
+.component-products .product-thumbnail .products-image {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+.component-products .product-text {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+  margin-top: 12px;
+}
+.component-products .product-price {
+  font-weight: 500;
+  color: #ff7158;
+}
+
+/*# sourceMappingURL=compile.css.map */
